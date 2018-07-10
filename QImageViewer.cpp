@@ -155,6 +155,7 @@ void QImageViewer::mouseReleaseEvent(QMouseEvent * event)
     if (event->button() == Qt::RightButton)
     {
         m_selection = QRect();
+        repaint();
     }
 }
 

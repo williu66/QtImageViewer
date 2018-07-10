@@ -68,7 +68,7 @@ QString s_lastDir = QDir::currentPath() + "\\Sample\\";
 void QtImageDemo::onOpenFile()
 {
     fileName = QFileDialog::getOpenFileName(this,
-        tr("Open File"), s_lastDir, QString("All Files (*.pdf *.dwg *.png *.bmp *.jpg *.jpeg)"));
+        tr("Open File"), s_lastDir, QString("All Files (*.png *.bmp *.jpg *.jpeg)"));
     s_lastDir = QFileInfo(fileName).absolutePath();
     dia.lineEdit->setText(fileName);
 }
